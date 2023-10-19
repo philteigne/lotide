@@ -46,8 +46,6 @@ const without = function(inputArr, filterArr) {
     if (elementClean === true) {
       cleanArr.push(inputArr[i]);
     }
-
-    elementClean = false;
   }
 
   return cleanArr;
