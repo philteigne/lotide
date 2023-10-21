@@ -34,7 +34,7 @@ const letterPositions = function(sentence) {
 
     let currentLetter = sentence[i];
 
-    if (!currentLetter) {  //  if i is a space ignore it
+    if (currentLetter === ' ') {  //  if i is a space ignore it
       continue;
     }
 
