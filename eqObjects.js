@@ -36,11 +36,6 @@ const eqObjects = function(object1, object2) {
   //  for each key in objectKeys1, check if it exists in objectKeys2, and if the value is the same
   for (let i of objectKeys1) {
 
-    if (!(i in object2)) {
-      return false;
-    }
-    //  object key exists in both objects
-
     if (object1[i] !== object2[i] && !Array.isArray(object1[i])) {
       return false;
     }
@@ -62,6 +57,8 @@ const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
 const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
 
 const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
+
+console.log(multiColorShirtObject["sleeveLength"] !== longSleeveMultiColorShirtObject["sleeveLength"]);
 
 assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true);
 assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false);
