@@ -36,7 +36,7 @@ const eqObjects = function(object1, object2) {
   //  for each key in objectKeys1, check if it exists in objectKeys2, and if the value is the same
   for (let i of objectKeys1) {
 
-    if (!Object.prototype.hasOwnProperty.call(object2, i)) {
+    if (!(i in object2)) {
       return false;
     }
     //  object key exists in both objects
