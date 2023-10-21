@@ -11,7 +11,6 @@ const assertEqual = function(actual, expected) {
 // Given a sentence, count all letters in the sentence and return an object containing each letter's count.
 const countLetters = function(sentenceToCount) {
   //  convert sentence into lowercase for consistent comparing
-  // sentenceToCount = sentenceToCount.toLowerCase();
 
   const resultObj = {};
 
