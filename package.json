@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@philteigne/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simplistic recreation of lodash, as a project for Lighthouse Labs.",
   "main": "main.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/philteigne/lotide.git"
   },
-  "author": "",
+  "author": "Phil Teigne",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/philteigne/lotide/issues"
