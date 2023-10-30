@@ -26,12 +26,10 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
-* `function2(...)`: description
-* `function3(...)`: description
 * `head(array)`: Returns first element in a given array.
 * `tail(array)`: Returns all but first element in a given array.
 * `middle(array)`: Returns the middle element in a given array of at least length 3. If the array has an equal number of elements it will return both middle elements.
+* `map(array, callback)`: Returns array with callback specified adaptations made to each element of the inputted array.
 * `assertArraysEqual(array1, array2)`: Returns a true assertion if the two given arrays are identical, and a false assertion if they are not.
 * `assertEqual(value1, value2)`: Returns a true assertion if the two given values are identical, and a false assertion if they are not.
 * `assertObjectsEqual(object1, object2)`: Returns a true assertion if the two given objects are identical, and a false assertion if they are not.
