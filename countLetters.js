@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 // Given a sentence, count all letters in the sentence and return an object containing each letter's count.
 const countLetters = function(sentenceToCount) {
   //  convert sentence into lowercase for consistent comparing
@@ -24,9 +22,3 @@ const countLetters = function(sentenceToCount) {
 };
 
 module.exports = countLetters;
-
-// const countLettersResult = countLetters('LHL');
-// console.log(countLettersResult);
-
-// assertEqual(countLettersResult['L'], 2);
-// assertEqual(countLettersResult['H'], 1);

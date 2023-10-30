@@ -1,7 +1,5 @@
 const eqObjects = require('./eqObjects');
 
-const eqArrays = require('./eqArrays');
-
 const assertObjectsEqual = function(actual, expected) {
 
   const inspect = require('util').inspect;
@@ -19,11 +17,3 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 module.exports = assertObjectsEqual;
-
-// const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-// const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-// const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-
-// assertObjectsEqual(multiColorShirtObject, anotherMultiColorShirtObject);
-// assertObjectsEqual(longSleeveMultiColorShirtObject, anotherMultiColorShirtObject);
-

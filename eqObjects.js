@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const eqArrays = require('./eqArrays');
 
 //  Compare two inputted objects and return true or false depending on if they are the same
@@ -44,19 +42,3 @@ const eqObjects = function(object1, object2) {
 };
 
 module.exports = eqObjects;
-
-// const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-// const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-
-// const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-// const anotherlongSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: { long: '3/4 sleeve', short: 'tank-top'} };
-
-// console.log(multiColorShirtObject["sleeveLength"] !== longSleeveMultiColorShirtObject["sleeveLength"]);
-
-// assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true);
-// assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false);
-
-// assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true);
-// assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), false);
-// assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: {c: 2}}, { a: { y: 0, z: 1 }, b: 2 }), false);
-// assertEqual(eqObjects(anotherlongSleeveMultiColorShirtObject, anotherlongSleeveMultiColorShirtObject), true);
