@@ -1,31 +1,17 @@
 const assert = require('chai').assert;
 const countOnly = require('../countOnly');
 
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
-
-const result1 = countOnly(firstNames, {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false});
-
 describe('#countOnly', () => {
-  it('returns 1 for result1["Jason"]', () => {
-    assert.strictEqual(result1['Jason'], 1);
+  it('returns 1 for countOnly(["Jason", "Agouhanna", "Fang", "Fang"], {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false})["Jason"]', () => {
+    assert.strictEqual(countOnly(["Jason", "Agouhanna", "Fang", "Fang"], {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false})['Jason'], 1);
   });
-  it('returns undefined for result1["Karima"]', () => {
-    assert.strictEqual(result1['Karima'], undefined);
+  it('returns undefined for countOnly(["Jason", "Agouhanna", "Fang", "Fang"], {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false})["Karima"]', () => {
+    assert.strictEqual(countOnly(["Jason", "Agouhanna", "Fang", "Fang"], {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false})['Karima'], undefined);
   });
-  it('returns 2 for result1["Fang"]', () => {
-    assert.strictEqual(result1['Fang'], 2);
+  it('returns 2 for countOnly(["Jason", "Agouhanna", "Fang", "Fang"], {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false})["Fang"]', () => {
+    assert.strictEqual(countOnly(["Jason", "Agouhanna", "Fang", "Fang"], {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false})['Fang'], 2);
   });
-  it('returns undefined for result1["Agouhanna"]', () => {
-    assert.strictEqual(result1['Agouhanna'], undefined);
+  it('returns undefined countOnly(["Jason", "Agouhanna", "Fang", "Fang"], {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false})["Agouhanna"]', () => {
+    assert.strictEqual(countOnly(["Jason", "Agouhanna", "Fang", "Fang"], {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false})['Agouhanna'], undefined);
   });
 });
