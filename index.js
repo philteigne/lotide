@@ -12,9 +12,11 @@ const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
 const flatten = require('./flatten');
 const letterPositions = require('./letterPositions');
-const main = require('./main');
-const map = require('./map');
-const myModule = require('./myModule');
+const takeUntil = require('./takeUntil');
+const without = require('./without');
+// const main = require('./main');
+// const map = require('./map');
+// const myModule = require('./myModule');
 
 module.exports = {
   head: head,
@@ -31,7 +33,6 @@ module.exports = {
   findKeyByValue: findKeyByValue,
   flatten: flatten,
   letterPositions: letterPositions,
-  main: main,
-  map: map,
-  myModule: myModule
+  takeUntil: takeUntil,
+  without: without
 };
