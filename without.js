@@ -1,3 +1,4 @@
+// Returns an array with all values listed in the filter array (array2), removed.
 const without = function(inputArr, filterArr) {
   
   let cleanArr = [];

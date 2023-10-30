@@ -1,3 +1,4 @@
+// Returns a true assertion if the two given objects are identical, and a false assertion if they are not.
 const eqObjects = require('./eqObjects');
 
 const assertObjectsEqual = function(actual, expected) {

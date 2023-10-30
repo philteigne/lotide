@@ -1,3 +1,4 @@
+// Returns an object that lists the index location of all letters in the input sentence
 const letterPositions = function(sentence) {
   const results = {};
 
@@ -16,8 +17,6 @@ const letterPositions = function(sentence) {
     results[currentLetter].push(i);
 
   }
-
-  // logic to update results here
   return results;
 };
 

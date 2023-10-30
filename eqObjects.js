@@ -1,3 +1,4 @@
+// Return true if the two given objects are identical, return false if they are not.
 const eqArrays = require('./eqArrays');
 
 //  Compare two inputted objects and return true or false depending on if they are the same
