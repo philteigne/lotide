@@ -1,8 +1,8 @@
 {
   "name": "@philteigne/lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simplistic recreation of lodash, as a project for Lighthouse Labs.",
-  "main": "main.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
